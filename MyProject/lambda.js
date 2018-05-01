@@ -1,6 +1,7 @@
 let AWS = require('aws-sdk');
-exports.handler = function(event, context, callback) {
+let uuid = require('uuid');
+exports.handler = function (event, context, callback) {
 
 
-	callback(null,'Successfully executed B');
+	callback(null, 'Successfully executed B' + uuid.v4());
 }
